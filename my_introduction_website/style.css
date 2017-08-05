@@ -1,0 +1,376 @@
+/*start reset*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*end reset*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 100%;
+  height: 400px;
+  background-image: url(photos/beach-sunset.jpg);
+  background-repeat: no-repeat;
+  background-position: 67% 50%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .gradient {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 29%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 29%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 63%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 50%;
+  justify-content: center;
+}
+
+.header-title {
+  max-width: 500px;
+  text-align: right;
+}
+
+nav {
+  display: flex;
+  max-width: 500px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*flex: 3;*/
+}
+
+nav .social {
+  /*flex: 1;*/
+  order: 1;
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+}
+
+
+/* parent element for info-box */
+
+.info-wrapper {
+  margin: 100px auto 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /*background-color: #EDE8E8;*/
+  align-items: center;
+}
+
+
+/*container for more-info text*/
+
+.more-info-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+article.article1 {
+  flex: 1;
+  padding-right: 50px;
+}
+
+article.article2 {
+  flex: 1;
+}
+
+
+/* Rules for individual info-boxes */
+
+.info-box {
+  height: 10rem;
+  padding: 10px;
+  box-sizing: border-box;
+  /*background-color: grey;*/
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.structure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-catagory {
+  flex: 1;
+  /*background-color: #b600ff;*/
+  display: flex;
+  min-width: 330px;
+}
+
+.response {
+  flex: 1;
+  align-items: flex-start;
+  font-family: "Permanent Marker";
+  font-size: 60px;
+  /*background-color: #63cfcf;*/
+}
+
+
+/*Text Style Rules*/
+
+.header a {
+  text-decoration: none;
+}
+
+.header-title h1 {
+  color: #fff;
+  font-size: 100px;
+  font-family: "Bangers";
+}
+
+article h1 {
+  color: black;
+  font-size: 40px;
+  font-family: "Bangers";
+  padding-bottom: 20px;
+}
+
+article p {
+  color: black;
+  font-size: 20px;
+  font-family: "Roboto";
+  text-indent: 45px;
+  padding-bottom: 60px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: "Special Elite";
+  font-size: 30px;
+}
+
+.plus-symbol {
+  font-size: 30px;
+  font-weight: bolder;
+  align-self: flex-end;
+  padding-bottom: 20px;
+}
+
+ul {
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 1.5;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+
+/*hover.css button effect*/
+
+
+/* Buzz Out */
+
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+/*more pictures*/
+
+
+/*scrolling background*/
+
+
+/*
+.scrolling_pictures {
+background-attachment: fixed;
+width: 100%;
+height: 100vh;
+}
+
+&:nth-child(1) {
+background-image: url(/Users/jonnyhork/Desktop/galvanize/my_introduction_website/photos/black-velvet.jpg);
+}
+
+&:nth-child(2) {
+background-image: url(/Users/jonnyhork/Desktop/galvanize/my_introduction_website/photos/peahi-slab.jpg);
+}
+
+&:nth-child(3) {
+background-image: url(/Users/jonnyhork/Desktop/galvanize/my_introduction_website/photos/the-hatchling.jpg);
+}
+}*/
